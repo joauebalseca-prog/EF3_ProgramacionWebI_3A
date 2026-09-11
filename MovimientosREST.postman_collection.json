@@ -1,0 +1,66 @@
+{
+  "info": {
+    "_postman_id": "30bf1cbb-043e-4082-a2e7-32ff4618374d",
+    "name": "MovimientosREST",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "57563841",
+    "_collection_link": "https://go.postman.co/collection/57563841-30bf1cbb-043e-4082-a2e7-32ff4618374d?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Listar movimientos",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": ""
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Movimiento por ID",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": ""
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Movimientos por producto",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": ""
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Registrar ENTRADA",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": ""
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Registrar SALIDA",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": ""
+        }
+      },
+      "response": []
+    }
+  ]
+}
