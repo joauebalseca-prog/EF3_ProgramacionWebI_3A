@@ -1,0 +1,73 @@
+<main class="contenedor">
+  <h1>Productos y movimientos de inventario</h1>
+  <p class="subtitulo">Productos: SOAP · Movimientos: REST</p>
+
+  <p class="mensaje" *ngIf="mensaje">{{ mensaje }}</p>
+
+  <section class="panel">
+    <h2>Registrar movimiento</h2>
+    <div class="formulario">
+      <label>
+        Producto
+        <select [(ngModel)]="movimiento.idProducto">
+          <option *ngFor="let p of productos" [ngValue]="p.idProducto">
+            {{ p.nombre }} · stock {{ p.stock }}
+          </option>
+        </select>
+      </label>
+
+      <label>
+        Tipo
+        <select [(ngModel)]="movimiento.tipo">
+          <option value="ENTRADA">ENTRADA</option>
+          <option value="SALIDA">SALIDA</option>
+        </select>
+      </label>
+
+      <label>
+        Cantidad
+        <input type="number" [(ngModel)]="movimiento.cantidad">
+      </label>
+
+      <label>
+        Observación
+        <input type="text" [(ngModel)]="movimiento.observacion">
+      </label>
+
+      <button type="button" (click)="guardar()">Guardar movimiento</button>
+    </div>
+  </section>
+
+  <section class="panel">
+    <h2>Productos obtenidos por SOAP</h2>
+    <table>
+      <thead><tr><th>ID</th><th>Producto</th><th>Precio</th><th>Stock</th><th>Estado</th></tr></thead>
+      <tbody>
+        <tr *ngFor="let p of productos">
+          <td>{{ p.idProducto }}</td>
+          <td>{{ p.nombre }}</td>
+          <td>{{ p.precio | number:'1.2-2' }}</td>
+          <td>{{ p.stock }}</td>
+          <td>{{ p.estado ? 'Activo' : 'Inactivo' }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="panel">
+    <h2>Movimientos obtenidos por REST</h2>
+    <table>
+      <thead><tr><th>ID</th><th>Producto</th><th>Tipo</th><th>Cantidad</th><th>Anterior</th><th>Resultante</th></tr></thead>
+      <tbody>
+        <tr *ngFor="let m of movimientos">
+          <td>{{ m.idMovimiento }}</td>
+          <td>{{ m.idProducto }}</td>
+          <td>{{ m.tipo }}</td>
+          <td>{{ m.cantidad }}</td>
+          <td>{{ m.stockAnterior }}</td>
+          <td>{{ m.stockResultante }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+</main>

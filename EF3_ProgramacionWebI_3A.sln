@@ -1,0 +1,30 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 18
+VisualStudioVersion = 18.9.12120.119 stable
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductosSOAP", "ProductosSOAP\ProductosSOAP.csproj", "{D39D5C6C-19AA-4BCD-A218-3DF20AC4A831}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovimientosREST", "MovimientosREST\MovimientosREST.csproj", "{2B4CB05E-1183-4E55-89CF-E2875A168C31}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D39D5C6C-19AA-4BCD-A218-3DF20AC4A831}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D39D5C6C-19AA-4BCD-A218-3DF20AC4A831}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D39D5C6C-19AA-4BCD-A218-3DF20AC4A831}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D39D5C6C-19AA-4BCD-A218-3DF20AC4A831}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B4CB05E-1183-4E55-89CF-E2875A168C31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B4CB05E-1183-4E55-89CF-E2875A168C31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B4CB05E-1183-4E55-89CF-E2875A168C31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B4CB05E-1183-4E55-89CF-E2875A168C31}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8FFEEC3F-6456-4EBC-A6CB-47B5A319B64C}
+	EndGlobalSection
+EndGlobal

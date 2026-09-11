@@ -1,0 +1,36 @@
+PROGRAMACIÓN WEB I - EF TERCER BIMESTRE - TERCERO A MATUTINO
+
+ORDEN DE EJECUCIÓN
+
+1. SQL SERVER
+   - Ejecute SQL/EF3_Productos_Movimientos.sql en SQL Server Management Studio.
+   - Si su instancia no es localhost\SQLEXPRESS, ajuste DefaultConnection en los appsettings.json.
+
+2. PRODUCTOS SOAP
+   - Abra ProductosSOAP/ProductosSOAP.csproj en Visual Studio.
+   - Ejecute el perfil HTTP.
+   - Servicio: http://localhost:5163/ProductoService.svc
+   - WSDL: http://localhost:5163/ProductoService.svc?wsdl
+
+3. MOVIMIENTOS REST
+   - Abra MovimientosREST/MovimientosREST.csproj en Visual Studio.
+   - Ejecute el perfil HTTP.
+   - URL base: http://localhost:5265
+
+4. PRODUCTOS ANGULAR
+   - Abra una terminal en productos-angular.
+   - Ejecute: npm install
+   - Ejecute: ng serve
+   - URL: http://localhost:4200
+
+5. Las pruebas REST deben realizarse con Postman.
+   Endpoints existentes para pruebas manuales:
+   GET  http://localhost:5265/api/MovimientoInventario
+   GET  http://localhost:5265/api/MovimientoInventario/1
+   GET  http://localhost:5265/api/MovimientoInventario/producto/1
+   POST http://localhost:5265/api/MovimientoInventario
+
+ESTADO DEL PROYECTO
+- ProductosSOAP se entrega funcional.
+- MovimientosREST requiere modificaciones.
+- Angular requiere modificaciones.
